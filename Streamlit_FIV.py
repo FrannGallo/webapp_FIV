@@ -22,7 +22,7 @@ with col1:
 
 with col2:
     variable= "amh"
-    amh_log = col2.slider("Ingrese cantidades obtenidas de \n la hormona antimuleriana en sangre:", 1, 13) 
+    amh_log = col2.slider("Ingrese cantidades obtenidas de \n la hormona antimuleriana en sangre:", 0.01, 13.0) 
     distribution(data,variable,amh_log) 
     col2.write(f"Antimulleriana en sangre: {amh_log} ng/ml")
 with col3:
