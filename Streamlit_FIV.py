@@ -7,7 +7,7 @@ from functions import distribution
 data= pd.read_csv("data_etiquetada.csv")
 
 st.sidebar.success("Seleccionar una demo")
-
+#
 st.markdown(
     """
     En esta pagina se muestran todos los modelos desarrollados para predecir los ovulos que se obtendran luego de un tratamiento de fecundacion in vitro(FIV)
