@@ -137,14 +137,14 @@ def main():
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown("### Ensamble de Regresores Logísticos")
-        st.markdown(f'Predicción para el modelo 1: **<span style="color:red;">{"Menor o igual a 4" if prediction1 == 0 else "Mayor a 4"}</span>**', unsafe_allow_html=True)
-        st.markdown(f'Predicción para el segundo modelo: **<span style="color:red;">{"Igual o menor a 9" if prediction2 == 0 else "Mayor a 9"}</span>**', unsafe_allow_html=True)
-        st.markdown(f'Para el ensamble de modelos(LR) el paciente obtiene una cantidad de ovocitos capturados {"entre" if result == 1 else ""}: **<span style="color:red;">{result_str}</span>**', unsafe_allow_html=True)
+        st.markdown("### Ensamble de Regresores Logísticos (LR)")
+        st.markdown(f'Predicción para el primer modelo paciente con mayor probabilidad en el rango: **<span style="color:red;">{"Menor o igual a 4" if prediction1 == 0 else "Mayor a 4"}</span>**', unsafe_allow_html=True)
+        st.markdown(f'Predicción para el segundo modelo, paciento con mayor probabilidad en el rango: **<span style="color:red;">{"Igual o menor a 9" if prediction2 == 0 else "Mayor a 9"}</span>**', unsafe_allow_html=True)
+        st.markdown(f'Para el ensamble de modelos(LR) el paciente tiene mayores probabilidades de caer en el rango de ovocitos capturados {"entre" if result == 1 else ""}: **<span style="color:red;">{result_str}</span>**', unsafe_allow_html=True)
 
     with col2:
-        st.markdown("### Super Vector Classifier")
-        st.markdown(f'Para el modelo SVC paciente obtiene una cantidad de ovocitos capturados {"entre" if prediction3 == '2' else ""}: **<span style="color:red;">{result_str2}</span>**', unsafe_allow_html=True)
+        st.markdown("### Super Vector Classifier (SVC)")
+        st.markdown(f'Para el modelo SVC el paciente tiene mayores probabilidades de caer en el rango de ovocitos capturados {"entre" if prediction3 == '2' else ""}: **<span style="color:red;">{result_str2}</span>**', unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
