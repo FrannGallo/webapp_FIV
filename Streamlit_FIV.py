@@ -12,7 +12,7 @@ st.markdown(
     # Embryoxite LAB
     En esta pagina se muestran modelos desarrollados para predecir los ovulos que se obtendran luego de un tratamiento de fecundacion in vitro(FIV)
     
-    Modelos actuales:
+    **Modelos actuales:**
 
     - Ensamble de regresores logísticos v1
     - Super Vector Classifier v1
