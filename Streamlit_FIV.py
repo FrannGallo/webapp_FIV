@@ -10,8 +10,7 @@ data = data[data['total rfa'] <= 30]
 st.markdown(
     """
     # Embryoxite LAB
-    En esta pagina se muestran modelos desarrollados para predecir los ovulos que se obtendran luego de un tratamiento de fecundacion in vitro(FIV)
-    
+    Esta web es un experimento para mostrar distintos modelos de inteligencia artificial (IA) para predecir el número de ovocitos posibles a recuperar en pacientes que realizan tratamiento de reproducción asistida.    
     **Modelos actuales:**
 
     - Ensamble de regresores logísticos v1
@@ -24,7 +23,7 @@ st.markdown(
 """
 )
 
-st.write(f'<h2 class="big-font"> Simulación de estimulación ovárica </h2>', unsafe_allow_html=True)
+st.write(f'<h2 class="big-font"> Simulación de Recuperacion de ovocitos </h2>', unsafe_allow_html=True)
 st.write(f'<p class="big-font"> Podemos observar la distribucion de los datos con los que fueron entrenados nuestros modelos</p>', unsafe_allow_html=True)
 st.write(f'<p class="big-font"> Seleccione los valores de cada variable para observar el posible resultado que obtendria si el paciente tiene esas características</p>', unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3)
